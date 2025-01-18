@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Print_Number_to_Cm
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+          
+        {
+            {
+                // دریافت ورودی از کاربر
+                Console.Write("Please Inter the Number :");
+                double numberInMeters = Convert.ToDouble(Console.ReadLine());
+
+                // تبدیل به سانتی‌متر
+                double numberInCentimeters = numberInMeters * 100;
+
+                // چاپ نتیجه
+                Console.WriteLine($" {numberInCentimeters}Cm ");
+            }
+        }
+    }
+    }
+}
+
