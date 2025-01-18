@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Print_The_Circumference_and_Area_of_a_Circle
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // دریافت شعاع دایره از کاربر
+            Console.Write("Please Inter The Rasus of Circle : ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+
+            // محاسبه محیط و مساحت دایره
+            double area = Math.PI * radius * radius; // مساحت
+            double circumference = 2 * Math.PI * radius; // محیط
+
+            // نمایش نتایج
+            Console.WriteLine("Area is : " + area);
+            Console.WriteLine("Circumference is : " + circumference);
+        }
+    }
+}
