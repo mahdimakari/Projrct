@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace project_number_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Your Numbers :");
+            string input = Console.ReadLine();
+
+            Console.WriteLine("Enter Your Number if You want to Cheack ?");
+            char characterToCheck = Console.ReadKey().KeyChar; // دریافت کاراکتر از کاربر
+            Console.WriteLine();
+
+            // شمارش تعداد تکرار کاراکتر
+            int count = 0;
+            foreach (char c in input)
+            {
+                if (c == characterToCheck)
+                {
+                    count++;
+                }
+            }
+
+            // نمایش نتیجه
+            if (count > 1)
+            {
+                Console.WriteLine($"character '{characterToCheck}' in your field {count} The load has been repeated.");
+            }
+            else if (count == 1)
+            {
+                Console.WriteLine($"character '{characterToCheck}' There is only one time in your field.");
+            }
+            else
+            {
+                Console.WriteLine($"character '{characterToCheck}' Does not exist in your field.");
+            }
+
+            // بررسی اگر ورودی کاراکتر عدد باشد
+            if (char.IsDigit(characterToCheck))
+            {
+                Console.WriteLine("You have selected a number to review.");
+            }
+            else if (char.IsLetter(characterToCheck))
+            {
+                Console.WriteLine("You have selected a number to review.");
+            }
+            else
+            {
+                Console.WriteLine("You have entered a character other than a letter or number.");
+            }
+
+        }
+
+    }
+}
