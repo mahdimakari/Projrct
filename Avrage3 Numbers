@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Avrage_3_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // درخواست از کاربر برای وارد کردن 3 عدد
+            Console.Write("Inter Your First Number :");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Inter Your Scond Number : ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Inter Your Third Number : ");
+            double num3 = Convert.ToDouble(Console.ReadLine());
+
+            // محاسبه میانگین
+            double average = (num1 + num2 + num3) / 3;
+
+            // نمایش نتیجه
+            Console.WriteLine("Avrage is : " + average);
+        }
+    }
+} 
