@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Print_Thhe_Largest_Number_Between_3_Number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // دریافت سه عدد از کاربر
+            Console.Write("Print The First Number : ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Print The Second Number : ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Print The Third Number: ");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+
+            // پیدا کردن بزرگترین عدد
+            int maxNumber = Math.Max(num1, Math.Max(num2, num3));
+
+            // چاپ بزرگترین عدد
+            Console.WriteLine("The Largest Number: " + maxNumber);
+        }
+    }
+}
